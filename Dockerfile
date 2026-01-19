@@ -1,4 +1,6 @@
 FROM httpd:alpine
+RUN apk update && apk upgrade && \
+    rm -rf /var/cache/apk/*
 ARG domain
 ARG prefix="http://"
 RUN test -n "$domain" || (echo "ERROR: domain is not set" && false)
