@@ -1,5 +1,8 @@
+.github/
 .git
 .idea
 .dockerignore
 Dockerfile
 README.md
+LICENSE
+SECURITY.md
